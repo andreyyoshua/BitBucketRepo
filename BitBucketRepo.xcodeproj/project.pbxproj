@@ -17,6 +17,13 @@
 		811A8A7C26ECB29400229C9B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A7B26ECB29400229C9B /* Entities.swift */; };
 		811A8A8426ECB3BF00229C9B /* BitBucketRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A8326ECB3BF00229C9B /* BitBucketRepoTests.swift */; };
 		811A8A8C26ECB41900229C9B /* RepoRawJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */; };
+		811A8A8F26ECB71900229C9B /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A8E26ECB71900229C9B /* RepoCell.swift */; };
+		811A8A9226ECB73700229C9B /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9126ECB73700229C9B /* ClosureSleeve.swift */; };
+		811A8A9426ECB74D00229C9B /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9326ECB74D00229C9B /* ImageCache.swift */; };
+		811A8A9626ECC42100229C9B /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9526ECC42100229C9B /* LoadingCell.swift */; };
+		811A8A9826ECC42F00229C9B /* NextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9726ECC42F00229C9B /* NextCell.swift */; };
+		811A8A9A26ECC43C00229C9B /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9926ECC43C00229C9B /* ErrorCell.swift */; };
+		811A8A9D26ECC4CA00229C9B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A9C26ECC4CA00229C9B /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		811A8A8326ECB3BF00229C9B /* BitBucketRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketRepoTests.swift; sourceTree = "<group>"; };
 		811A8A8526ECB3BF00229C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRawJSON.swift; sourceTree = "<group>"; };
+		811A8A8E26ECB71900229C9B /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		811A8A9126ECB73700229C9B /* ClosureSleeve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
+		811A8A9326ECB74D00229C9B /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		811A8A9526ECC42100229C9B /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		811A8A9726ECC42F00229C9B /* NextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextCell.swift; sourceTree = "<group>"; };
+		811A8A9926ECC43C00229C9B /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
+		811A8A9C26ECC4CA00229C9B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,7 @@
 		811A8A5E26ECA6FC00229C9B /* BitBucketRepo */ = {
 			isa = PBXGroup;
 			children = (
+				811A8A9026ECB72600229C9B /* Utils */,
 				811A8A7326ECA80D00229C9B /* Features */,
 				811A8A5F26ECA6FC00229C9B /* AppDelegate.swift */,
 				811A8A6126ECA6FC00229C9B /* SceneDelegate.swift */,
@@ -98,6 +113,7 @@
 		811A8A7326ECA80D00229C9B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				811A8A9B26ECC4BF00229C9B /* WebView */,
 				811A8A7426ECA81F00229C9B /* Main */,
 			);
 			path = Features;
@@ -106,6 +122,7 @@
 		811A8A7426ECA81F00229C9B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				811A8A8D26ECB70200229C9B /* Cell */,
 				811A8A6326ECA6FC00229C9B /* MainViewController.swift */,
 				811A8A7526ECA8CF00229C9B /* MainViewModel.swift */,
 				811A8A7926ECB1C000229C9B /* MainUseCase.swift */,
@@ -122,6 +139,34 @@
 				811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */,
 			);
 			path = BitBucketRepoTests;
+			sourceTree = "<group>";
+		};
+		811A8A8D26ECB70200229C9B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				811A8A8E26ECB71900229C9B /* RepoCell.swift */,
+				811A8A9526ECC42100229C9B /* LoadingCell.swift */,
+				811A8A9726ECC42F00229C9B /* NextCell.swift */,
+				811A8A9926ECC43C00229C9B /* ErrorCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		811A8A9026ECB72600229C9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				811A8A9126ECB73700229C9B /* ClosureSleeve.swift */,
+				811A8A9326ECB74D00229C9B /* ImageCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		811A8A9B26ECC4BF00229C9B /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				811A8A9C26ECC4CA00229C9B /* WebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,11 +269,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A8A7C26ECB29400229C9B /* Entities.swift in Sources */,
+				811A8A8F26ECB71900229C9B /* RepoCell.swift in Sources */,
+				811A8A9826ECC42F00229C9B /* NextCell.swift in Sources */,
 				811A8A6426ECA6FC00229C9B /* MainViewController.swift in Sources */,
+				811A8A9426ECB74D00229C9B /* ImageCache.swift in Sources */,
+				811A8A9626ECC42100229C9B /* LoadingCell.swift in Sources */,
 				811A8A7A26ECB1C000229C9B /* MainUseCase.swift in Sources */,
 				811A8A6026ECA6FC00229C9B /* AppDelegate.swift in Sources */,
+				811A8A9A26ECC43C00229C9B /* ErrorCell.swift in Sources */,
 				811A8A6226ECA6FC00229C9B /* SceneDelegate.swift in Sources */,
 				811A8A7626ECA8CF00229C9B /* MainViewModel.swift in Sources */,
+				811A8A9D26ECC4CA00229C9B /* WebViewController.swift in Sources */,
+				811A8A9226ECB73700229C9B /* ClosureSleeve.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
