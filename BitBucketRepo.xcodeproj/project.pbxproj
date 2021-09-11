@@ -15,7 +15,19 @@
 		811A8A7626ECA8CF00229C9B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A7526ECA8CF00229C9B /* MainViewModel.swift */; };
 		811A8A7A26ECB1C000229C9B /* MainUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A7926ECB1C000229C9B /* MainUseCase.swift */; };
 		811A8A7C26ECB29400229C9B /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A7B26ECB29400229C9B /* Entities.swift */; };
+		811A8A8426ECB3BF00229C9B /* BitBucketRepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A8326ECB3BF00229C9B /* BitBucketRepoTests.swift */; };
+		811A8A8C26ECB41900229C9B /* RepoRawJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		811A8A8626ECB3BF00229C9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811A8A5426ECA6FC00229C9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811A8A5B26ECA6FC00229C9B;
+			remoteInfo = BitBucketRepo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		811A8A5C26ECA6FC00229C9B /* BitBucketRepo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitBucketRepo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +40,21 @@
 		811A8A7526ECA8CF00229C9B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		811A8A7926ECB1C000229C9B /* MainUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUseCase.swift; sourceTree = "<group>"; };
 		811A8A7B26ECB29400229C9B /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		811A8A8126ECB3BE00229C9B /* BitBucketRepoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitBucketRepoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		811A8A8326ECB3BF00229C9B /* BitBucketRepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketRepoTests.swift; sourceTree = "<group>"; };
+		811A8A8526ECB3BF00229C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRawJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		811A8A5926ECA6FC00229C9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A8A7E26ECB3BE00229C9B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				811A8A5E26ECA6FC00229C9B /* BitBucketRepo */,
+				811A8A8226ECB3BF00229C9B /* BitBucketRepoTests */,
 				811A8A5D26ECA6FC00229C9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				811A8A5C26ECA6FC00229C9B /* BitBucketRepo.app */,
+				811A8A8126ECB3BE00229C9B /* BitBucketRepoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +114,16 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		811A8A8226ECB3BF00229C9B /* BitBucketRepoTests */ = {
+			isa = PBXGroup;
+			children = (
+				811A8A8326ECB3BF00229C9B /* BitBucketRepoTests.swift */,
+				811A8A8526ECB3BF00229C9B /* Info.plist */,
+				811A8A8B26ECB41900229C9B /* RepoRawJSON.swift */,
+			);
+			path = BitBucketRepoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +144,24 @@
 			productReference = 811A8A5C26ECA6FC00229C9B /* BitBucketRepo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		811A8A8026ECB3BE00229C9B /* BitBucketRepoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811A8A8826ECB3BF00229C9B /* Build configuration list for PBXNativeTarget "BitBucketRepoTests" */;
+			buildPhases = (
+				811A8A7D26ECB3BE00229C9B /* Sources */,
+				811A8A7E26ECB3BE00229C9B /* Frameworks */,
+				811A8A7F26ECB3BE00229C9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811A8A8726ECB3BF00229C9B /* PBXTargetDependency */,
+			);
+			name = BitBucketRepoTests;
+			productName = BitBucketRepoTests;
+			productReference = 811A8A8126ECB3BE00229C9B /* BitBucketRepoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,6 +173,10 @@
 				TargetAttributes = {
 					811A8A5B26ECA6FC00229C9B = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					811A8A8026ECB3BE00229C9B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 811A8A5B26ECA6FC00229C9B;
 					};
 				};
 			};
@@ -137,6 +194,7 @@
 			projectRoot = "";
 			targets = (
 				811A8A5B26ECA6FC00229C9B /* BitBucketRepo */,
+				811A8A8026ECB3BE00229C9B /* BitBucketRepoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +206,13 @@
 			files = (
 				811A8A6C26ECA6FD00229C9B /* LaunchScreen.storyboard in Resources */,
 				811A8A6926ECA6FD00229C9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A8A7F26ECB3BE00229C9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +232,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		811A8A7D26ECB3BE00229C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A8A8C26ECB41900229C9B /* RepoRawJSON.swift in Sources */,
+				811A8A8426ECB3BF00229C9B /* BitBucketRepoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		811A8A8726ECB3BF00229C9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811A8A5B26ECA6FC00229C9B /* BitBucketRepo */;
+			targetProxy = 811A8A8626ECB3BF00229C9B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		811A8A6A26ECA6FD00229C9B /* LaunchScreen.storyboard */ = {
@@ -337,6 +419,48 @@
 			};
 			name = Release;
 		};
+		811A8A8926ECB3BF00229C9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2965WX6JV;
+				INFOPLIST_FILE = BitBucketRepoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreyyoshua.BitBucketRepoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBucketRepo.app/BitBucketRepo";
+			};
+			name = Debug;
+		};
+		811A8A8A26ECB3BF00229C9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2965WX6JV;
+				INFOPLIST_FILE = BitBucketRepoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreyyoshua.BitBucketRepoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitBucketRepo.app/BitBucketRepo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +478,15 @@
 			buildConfigurations = (
 				811A8A7126ECA6FD00229C9B /* Debug */,
 				811A8A7226ECA6FD00229C9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811A8A8826ECB3BF00229C9B /* Build configuration list for PBXNativeTarget "BitBucketRepoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A8A8926ECB3BF00229C9B /* Debug */,
+				811A8A8A26ECB3BF00229C9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
